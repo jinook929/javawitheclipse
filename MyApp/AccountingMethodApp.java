@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class AccountingMethodApp {
 
-	public static double valueOfSupply, vatRate, expenseRate;//, vat, total, expense, income;
+	public static double valueOfSupply, vatRate, expenseRate;
 	public static double[] dividendRates = new double[3];
 	
 	public static void main(String[] args) {

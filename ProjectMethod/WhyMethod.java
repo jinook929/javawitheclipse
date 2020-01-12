@@ -1,7 +1,9 @@
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class WhyMethod {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		//...
 		printATwoTimes();
@@ -23,6 +25,16 @@ public class WhyMethod {
 		printArgTwoTimes('b', "*");
 		printArgTwoTimes('c', "&");
 		printArgTwoTimes('d', "!");
+		
+		System.out.println("===== =====");
+		
+		System.out.println(twoTimes("jjo", "@"));
+		
+		FileWriter fw = new FileWriter("out.txt");
+		fw.write(twoTimes("Q", "^"));
+		fw.close();
+		
+//		Email.send("jinook929@gmail.com", "a two times", twoTimes("a", "&"));
 
 	}
 	
@@ -36,6 +48,14 @@ public class WhyMethod {
 		System.out.println(y);
 		System.out.println(x);
 		System.out.println(x);
+	}
+	
+	public static String twoTimes(String text, String delimiter) {
+		String out = "";
+		out = out + delimiter + "\n";
+		out = out + text + "\n";
+		out = out + text + "\n";
+		return out;
 	}
 
 }

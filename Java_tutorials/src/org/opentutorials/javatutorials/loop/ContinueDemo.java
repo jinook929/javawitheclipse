@@ -1,4 +1,4 @@
-package loop;
+package org.opentutorials.javatutorials.loop;
 
 public class ContinueDemo {
 

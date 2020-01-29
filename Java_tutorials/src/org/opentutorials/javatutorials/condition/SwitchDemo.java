@@ -1,4 +1,4 @@
-package condition;
+package org.opentutorials.javatutorials.condition;
 
 import javax.swing.JOptionPane;
 

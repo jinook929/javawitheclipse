@@ -1,4 +1,4 @@
-package method;
+package org.opentutorials.javatutorials.method;
 
 import java.io.*;
 

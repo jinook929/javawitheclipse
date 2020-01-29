@@ -1,4 +1,4 @@
-package method;
+package org.opentutorials.javatutorials.method;
 
 public class ReturnDemo {
 	

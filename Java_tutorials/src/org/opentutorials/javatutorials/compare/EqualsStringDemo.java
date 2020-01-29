@@ -1,4 +1,4 @@
-package compare;
+package org.opentutorials.javatutorials.compare;
 
 public class EqualsStringDemo {
 

@@ -28,7 +28,16 @@ class SubstractableCalculator extends Calculator {
 //    public SubstractableCalculator(int left, int right) {
 //		super(left, right);
 //	}
-
+	
+	public void sum() {
+		System.out.println(this.left + " + " + this.right + " = "+ (this.left + this.right));
+	}
+	
+	public void avg() {
+		System.out.println("The average of " + this.left + " & " + this.right + " : " );
+		super.avg();
+	}
+	
 	public void diff() {
         System.out.println(this.left - this.right);
     }

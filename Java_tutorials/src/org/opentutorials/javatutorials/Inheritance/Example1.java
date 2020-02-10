@@ -2,12 +2,19 @@ package org.opentutorials.javatutorials.Inheritance;
 
 class Calculator {
     int left, right;
+    
+    public Calculator() {}
  
-    public void setOprands(int left, int right) {
+    public Calculator(int left, int right) {
         this.left = left;
         this.right = right;
     }
  
+    public void setOperands(int left, int right) {
+    	this.left = left;
+        this.right = right;
+    }
+    
     public void sum() {
         System.out.println(this.left + this.right);
     }
@@ -18,16 +25,20 @@ class Calculator {
 }
 
 class SubstractableCalculator extends Calculator {
-    public void diff() {
+//    public SubstractableCalculator(int left, int right) {
+//		super(left, right);
+//	}
+
+	public void diff() {
         System.out.println(this.left - this.right);
     }
 }
 
-public class example1 {
+public class Example1 {
 
 	public static void main(String[] args) {
 		SubstractableCalculator c1 = new SubstractableCalculator();
-        c1.setOprands(10, 20);
+        c1.setOperands(10, 20);
 		System.out.println("First Number : " + c1.left);
 		System.out.println("Second Number : " + c1.right);
 		

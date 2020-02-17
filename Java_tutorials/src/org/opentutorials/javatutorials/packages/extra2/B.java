@@ -1,4 +1,4 @@
-package org.opentutorials.javatutorials.packages.extra1;
+package org.opentutorials.javatutorials.packages.extra2;
 
 public class B {
 

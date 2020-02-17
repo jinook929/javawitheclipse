@@ -1,4 +1,4 @@
-package org.opentutorialsjavatutorials.accessmodifier.inner;
+package org.opentutorials.javatutorials.accessmodifier;
 
 class A {
 	public String x() {

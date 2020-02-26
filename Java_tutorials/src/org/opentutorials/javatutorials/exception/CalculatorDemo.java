@@ -12,9 +12,12 @@ class Calculator {
 		System.out.print(this.firstNum / this.secondNum);
 		System.out.print(" 입니다.");
 		} catch(Exception e) {
-			System.out.println("오류가 발생했습니다 : " + e.getMessage());
+			System.out.println("\n\ne.getMessage()\n" + e.getMessage());
+			System.out.println("\n\ne.toString()\n" + e.toString());
+			System.out.println("\n\ne.printStackTrace()");
+			e.printStackTrace();
 		}
-		
+		System.out.println("Divide End");
 	}
 }
 

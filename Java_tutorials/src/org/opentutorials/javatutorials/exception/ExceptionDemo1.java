@@ -18,6 +18,8 @@ class A {
 			e.printStackTrace();
 		} catch(Exception e) {
 			System.out.println("Exception e occurred : " + e.getMessage());
+		} finally {
+			System.out.println("finally");
 		}
 	}
 }
@@ -26,5 +28,7 @@ public class ExceptionDemo1 {
 	public static void main(String[] args) {
 		A a = new A();
 		a.z(10, 0);
+		a.z(1, 0);
+		a.z(2, 1);
 	}
 }

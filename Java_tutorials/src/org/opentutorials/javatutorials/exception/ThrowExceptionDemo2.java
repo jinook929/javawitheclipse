@@ -21,4 +21,17 @@ class E {
 
 public class ThrowExceptionDemo2 {
 
+	public static void main(String[] args) {
+		int[] nums = {1, 0};
+		
+		try {
+		    System.out.println(nums[1] / nums[2]);
+		} catch(ArrayIndexOutOfBoundsException e){
+		    System.out.println("ArrayIndexOutOfBoundsException");
+		} catch(ArithmeticException e){
+		    System.out.println("ArithmeticException");
+		} catch(Exception e){
+		    System.out.println("Exception");
+		}
+	}
 }

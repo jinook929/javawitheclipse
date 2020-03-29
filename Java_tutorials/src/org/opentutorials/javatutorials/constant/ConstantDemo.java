@@ -57,19 +57,26 @@ public class ConstantDemo {
 //			System.out.println("Fruit apple equals company apple.");
 //		}
 		
-		int type_ = Fruit.APPLE;
+		Fruit type_ = Fruit.APPLE;
 		System.out.println(type_);
-		switch(type_) {
-		case Fruit.APPLE:
+		if(type_.equals(Fruit.APPLE)) {
 			System.out.println(57 + " kcal");
-			break;
-		case Fruit.PEACH:
+		} else if(type_.equals(Fruit.PEACH)) {
 			System.out.println(34 + " kcal");
-			break;
-		case Fruit.BANANA:
+		} else if(type_.equals(Fruit.BANANA)) {
 			System.out.println(93 + " kcal");
-			break;
 		}
+//		switch(type_) {
+//		case Fruit.APPLE:
+//			System.out.println(57 + " kcal");
+//			break;
+//		case Fruit.PEACH:
+//			System.out.println(34 + " kcal");
+//			break;
+//		case Fruit.BANANA:
+//			System.out.println(93 + " kcal");
+//			break;
+//		}
 
 		
 	}

@@ -1,10 +1,10 @@
 package org.opentutorials.javatutorials.generic;
 
-interface Info {
-	int getLevel();
+abstract class Info {
+	public abstract int getLevel();
 }
 
-class EmployeeInfoTwo implements Info {
+class EmployeeInfoTwo extends Info {
 	public int rank;
 	EmployeeInfoTwo(int rank) {
 		this.rank = rank;

@@ -14,6 +14,9 @@ class PersonOne<T, S> {
 		this.info = info;
 		this.id = id;
 	}
+	public <U> void printInfo(U info) {
+		System.out.println(info);
+	}
 }
 
 public class GenericDemo2 {
@@ -23,6 +26,7 @@ public class GenericDemo2 {
 		PersonOne<EmployeeInfoOne, Integer> p1 = new PersonOne<EmployeeInfoOne, Integer>(new EmployeeInfoOne(3), 1);
 		System.out.println(p1.id);
 		System.out.println(p1.info.rank);
+		p1.printInfo("Information");
 
 	}
 

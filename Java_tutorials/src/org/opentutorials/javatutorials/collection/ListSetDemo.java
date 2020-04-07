@@ -23,12 +23,12 @@ public class ListSetDemo {
 		}
 		
 		HashSet<Integer> A = new HashSet<>();
+		A.add(3);
+		A.add(3);
+		A.add(3);
+		A.add(2);
+		A.add(2);
 		A.add(1);
-		A.add(2);
-		A.add(2);
-		A.add(3);
-		A.add(3);
-		A.add(3);
 		
 		Iterator<Integer> hi = A.iterator();
 		while(hi.hasNext()) {
@@ -47,6 +47,30 @@ public class ListSetDemo {
 		System.out.println(A.containsAll(B));
 		System.out.println(A.containsAll(C));
 
+		System.out.println("=====");
+		
+		Iterator<Integer> hiA = A.iterator();
+
+		while(hiA.hasNext()) {
+			System.out.println(hiA.next());
+		}
+		
+		System.out.println("=====");
+
+//		A.addAll(B);
+		System.out.println(A.size());
+		A.retainAll(B);
+		System.out.println(A.size());
+//		A.removeAll(B);
+		System.out.println(A.size());
+		
+		System.out.println("=====");
+
+		Iterator<Integer> hi1 = A.iterator();
+
+		while(hi1.hasNext()) {
+			System.out.println(hi1.next());
+		}
 	}
 
 }
